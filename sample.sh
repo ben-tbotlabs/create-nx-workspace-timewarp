@@ -1,6 +1,14 @@
 #!/bin/zsh
 
 version=$(npm show create-nx-workspace version)
+
+#If the version already exists then abort
+if ls nx/$version;
+then
+    echo "Already have $version"
+    exit 1
+fi
+
 mkdir -p nx/$version
 cd nx/$version
 
