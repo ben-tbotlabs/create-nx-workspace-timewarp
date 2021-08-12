@@ -6,7 +6,7 @@ version=$(npm show create-nx-workspace version)
 if ls nx/$version;
 then
     echo "Already have $version"
-    exit 1
+    exit 0
 fi
 
 mkdir -p nx/$version
