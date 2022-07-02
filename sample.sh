@@ -17,3 +17,5 @@ cd dropfake
 
 npm install -D @nrwl/node @nrwl/angular @angular-devkit/architect
 nx generate @nrwl/angular:app admin --style=scss --routing=true --linter=eslint
+nx g @nrwl/angular:lib admin/util
+nx g @nrwl/workspace:lib sort

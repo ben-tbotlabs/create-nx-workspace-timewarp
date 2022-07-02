@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@dropfake/admin/util": ["libs/admin/util/src/index.ts"],
+      "@dropfake/sort": ["libs/sort/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
