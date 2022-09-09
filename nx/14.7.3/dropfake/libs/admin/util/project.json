@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/admin/util/src",
+  "prefix": "dropfake",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/admin/util"],
+      "options": {
+        "jestConfig": "libs/admin/util/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/admin/util/**/*.ts",
+          "libs/admin/util/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
