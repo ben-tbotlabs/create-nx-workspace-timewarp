@@ -16,6 +16,6 @@ npx --yes create-nx-workspace@latest dropfake --cli=nx --nx-cloud=false --preset
 cd dropfake
 
 npm install -D @nrwl/node @nrwl/angular @angular-devkit/architect
-nx generate @nrwl/angular:app admin --style=scss --routing=true --linter=eslint
-nx g @nrwl/angular:lib admin/util
-nx g @nrwl/workspace:lib sort
+nx generate @nx/angular:application admin --style=scss --routing=true --linter=eslint --standalone=false
+nx g @nx/angular:lib admin/util
+nx g @nx/js:lib sort --bundler=tsc --unitTestRunner=jest
